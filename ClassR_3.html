@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<GOGGLE FONT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Questrial&family=Qwitcher+Grypen:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>CSS | Flex</title>
+    <style>
+        .First {
+            display: flex;
+            justify-content: space-around;
+            background: darkred;
+            color: azure;
+            /*width: 45%;*/
+            padding: 30px 40px;
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .two, .one
+        {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 25px 30px 30px 25px;
+            background: black  ;
+            color: white  ;
+            width: 40%;
+            border: 5px solid #fff;
+            border-radius: 20px;
+            font-family: "Century Gothic";
+            font-size: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+            font-family: "Jost", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            text-transform: uppercase;
+        }
+
+    </style>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main{
+            display: flex;
+            background: darkred;
+            justify-content: center; /*will center all the content horizontally*/
+            align-items: center;
+            margin-top: 50px;
+            padding: 50px 40px;
+            height: 200px;
+        }
+
+        .after-main{
+            background: black;
+            width: 40%;
+            padding: 20px 40px;
+            border: 5px solid #fff;
+            border-radius: 20px;
+
+        }
+
+        .after-main p {
+            color: #ffffff;
+        }
+
+        #para {
+            font-family: "Questrial", sans-serif; /*I like this font alot more than the rest*/
+            font-weight: 400;
+            font-style: normal;
+            font-size: 30px;
+        }
+
+        #S {
+            color: antiquewhite;
+        }
+
+        #T {
+            color: crimson;
+        }
+
+        #Sn {
+            color: aqua;
+        }
+
+        #Snn {
+            color: aliceblue;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-evenly;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            background: darkred;
+        }
+
+        .smaller {
+            width: 23%;
+            height: 160px;
+            background: black;
+            color: darkred;
+            font-size: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid #ffffff;
+            border-radius: 20px;
+            font-family: "Questrial", sans-serif; /*I like this font alot more than the rest*/
+            font-weight: 400;
+            font-style: normal;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="First">
+    <div class="one">
+        <h1>Sample Text 1</h1>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime molestias mollitia obcaecati tempora tenetur.
+                Architecto, corporis ex illum ipsum laborum optio sequi sit velit veniam.</span></p>
+    </div>
+
+    <div class="two">
+        <h1><span id="S">Sample</span> <span id="T">Text</span> 2</h1>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime molestias mollitia obcaecati tempora tenetur.
+                Architecto, corporis ex illum ipsum laborum optio sequi sit velit veniam.</span></p>
+    </div>
+</div>
+
+<!--.main -->
+<!--generates a div-->
+
+<div class="main">
+    <div class="after-main">
+        <p><span id="para">Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Amet animi autem blanditiis consectetur doloremque dolores dolorum ea excepturi explicabo fuga harum illum, qui, sapiente soluta.</span>
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="smaller"><span id="S">1</span></div>
+    <div class="smaller"><span id="Sn">2</span></div>
+    <div class="smaller"><span id="Snn">3</span></div>
+    <div class="smaller">4</div>
+</div>
+
+</body>
+</html>
